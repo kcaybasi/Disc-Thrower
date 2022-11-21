@@ -26,7 +26,6 @@ public class ObjectPooler : MonoBehaviour
     void OnTakeDiscFromPool(GameObject obj)
     {
         obj.SetActive(true);
-        obj.transform.eulerAngles = new Vector3(0, 90, 0);
     }
 
     void OnReturnDiscToPool(GameObject obj)

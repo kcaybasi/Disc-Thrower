@@ -11,9 +11,13 @@ public class DiscThrower : MonoBehaviour
     void ThrowDisc()
     {
         GameObject obj = ObjectPooler.Instance.DiscPool.Get();
+        
+    
         obj.transform.position = transform.position;
+        
         float currentZ = obj.transform.position.z;
         obj.transform.DOMoveZ(currentZ + 50f, 5f);
+       
     }
     
     private void Update()

@@ -281,6 +281,9 @@ namespace HyperCasual.Runner
             meshFilter.sharedMesh = mesh;
             MeshRenderer meshRenderer = terrainGameObject.AddComponent<MeshRenderer>();
             meshRenderer.sharedMaterial = terrainMaterial;
+            MeshCollider meshCollider = terrainGameObject.AddComponent<MeshCollider>();
+            meshCollider.convex = true;
+
         }
     }
 }

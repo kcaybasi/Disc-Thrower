@@ -131,9 +131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12bceda1ccf1742ab8d661828a5161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CameraAnglePreset: 0
+  m_CameraAnglePreset: 1
   m_Offset: {x: 0, y: 0, z: 0}
   m_LookAtOffset: {x: 0, y: 0, z: 0}
-  m_LockCameraPosition: 0
+  m_LockCameraPosition: 1
   m_SmoothCameraFollow: 1
   m_SmoothCameraFollowStrength: 8

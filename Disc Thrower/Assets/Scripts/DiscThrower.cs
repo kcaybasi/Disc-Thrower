@@ -13,7 +13,7 @@ public class DiscThrower : MonoBehaviour
         GameObject obj = ObjectPooler.Instance.DiscPool.Get();
         
     
-        obj.transform.position = transform.position;
+        obj.transform.position = transform.position+Vector3.up*.25f;
         
         float currentZ = obj.transform.position.z;
         obj.transform.DOMoveZ(currentZ + 50f, 5f);

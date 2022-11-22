@@ -26,6 +26,7 @@ public class ObjectPooler : MonoBehaviour
     void OnTakeDiscFromPool(GameObject obj)
     {
         obj.SetActive(true);
+        obj.GetComponent<Collider>().enabled = true; // To activate colliders because we disable them if they collide with tower stone
     }
 
     void OnReturnDiscToPool(GameObject obj)

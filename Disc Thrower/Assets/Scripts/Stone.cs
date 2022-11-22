@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Stone : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class Stone : MonoBehaviour
     {
         if (other.CompareTag("Disc"))
         {
-            Destroy(this.gameObject,.1f);
+            transform.DOScale(Vector3.zero, .2f);
+            other.GetComponent<Collider>().enabled = false;
         }
     }
 }

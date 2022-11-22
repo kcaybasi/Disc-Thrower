@@ -32,7 +32,7 @@ public class DiscThrower : MonoBehaviour
     {
         _isThrowAllowed = false;
         ThrowDisc();
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1f);
         _isThrowAllowed = true;
     }
 }

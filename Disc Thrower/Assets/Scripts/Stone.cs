@@ -28,13 +28,18 @@ public class Stone : MonoBehaviour
             gibletParticleMain.startColor = _stoneColor;
             
             other.GetComponent<Collider>().enabled = false;
-            hitCount--;
-            hitCountText.text = hitCount.ToString();
+            UpdateHitCount();
             if (hitCount==0)
             {
                 _gibletParticle.Play();
                 transform.DOScale(Vector3.zero, .35f);
             }
         }
+    }
+
+    private void UpdateHitCount()
+    {
+        hitCount--;
+        hitCountText.text = hitCount.ToString();
     }
 }

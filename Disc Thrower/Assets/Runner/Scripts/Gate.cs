@@ -26,8 +26,8 @@ namespace HyperCasual.Runner
 
         enum GateType
         {
-            ChangeSpeed,
-            ChangeSize,
+            ChangeRate,
+            ChangeRange,
         }
 
         /// <summary>
@@ -82,12 +82,12 @@ namespace HyperCasual.Runner
         {
             switch (m_GateType)
             {
-                case GateType.ChangeSpeed:
-                    PlayerController.Instance.AdjustSpeed(m_Value);
+                case GateType.ChangeRate:
+                    DiscThrower.Instance.AdjustThrowRate(m_Value);
                 break;
 
-                case GateType.ChangeSize:
-                    PlayerController.Instance.AdjustScale(m_Value);
+                case GateType.ChangeRange:
+                    DiscThrower.Instance.AdjustThrowRange(m_Value);
                 break;
             }
 

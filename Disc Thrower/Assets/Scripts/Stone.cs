@@ -24,6 +24,8 @@ public class Stone : MonoBehaviour
     {
         if (other.CompareTag("Disc"))
         {
+            other.GetComponent<Disc>().SendDiscBack();
+            
             var gibletParticleMain = _gibletParticle.main;
             gibletParticleMain.startColor = _stoneColor;
             

@@ -16,9 +16,14 @@ public class Disc : MonoBehaviour
         _timer += Time.deltaTime;
         if (_timer>=lifeTime)
         {
-            _timer = 0;
-            ObjectPooler.Instance.DiscPool.Release(this.gameObject);
-            DOTween.Kill(transform);
+            SendDiscBack();
         }
+    }
+
+    public void SendDiscBack()
+    {
+        _timer = 0;
+        ObjectPooler.Instance.DiscPool.Release(this.gameObject);
+        DOTween.Kill(transform);
     }
 }

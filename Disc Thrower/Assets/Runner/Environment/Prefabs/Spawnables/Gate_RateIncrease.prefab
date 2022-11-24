@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SnapToGrid: 1
   m_GateType: 0
-  m_Value: 2
+  m_Value: 8
   m_Text: {fileID: 5952137432066916901}
 --- !u!1 &7747405279885962838
 GameObject:

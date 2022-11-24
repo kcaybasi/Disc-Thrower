@@ -3,28 +3,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
 
 public class Stone : MonoBehaviour
 { 
     private ParticleSystem _gibletParticle;
     private Color _stoneColor;
+    [SerializeField] private int hitCount;
+    public int HitCount => hitCount;
+    [SerializeField] private TextMeshProUGUI hitCountText;
 
     private void Awake()
     {
         _gibletParticle = transform.parent.GetChild(0).GetComponent<ParticleSystem>();
         _stoneColor = GetComponent<MeshRenderer>().material.color;
+        hitCountText.text = hitCount.ToString();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Disc"))
         {
-            
             var gibletParticleMain = _gibletParticle.main;
             gibletParticleMain.startColor = _stoneColor;
-            _gibletParticle.Play();
-            transform.DOScale(Vector3.zero, .25f);
+            
             other.GetComponent<Collider>().enabled = false;
+            hitCount--;
+            hitCountText.text = hitCount.ToString();
+            if (hitCount==0)
+            {
+                _gibletParticle.Play();
+                transform.DOScale(Vector3.zero, .35f);
+            }
         }
     }
 }

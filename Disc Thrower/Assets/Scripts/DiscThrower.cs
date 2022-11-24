@@ -12,7 +12,6 @@ public class DiscThrower : MonoBehaviour
     {
         GameObject obj = ObjectPooler.Instance.DiscPool.Get();
         
-    
         obj.transform.position = transform.position+Vector3.up*.25f;
         
         float currentZ = obj.transform.position.z;
@@ -32,7 +31,7 @@ public class DiscThrower : MonoBehaviour
     {
         _isThrowAllowed = false;
         ThrowDisc();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.35f);
         _isThrowAllowed = true;
     }
 }

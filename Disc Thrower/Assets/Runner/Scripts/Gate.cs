@@ -50,7 +50,7 @@ namespace HyperCasual.Runner
                 m_Transform.localScale = scale;
             }
         }
-
+        
         /// <summary>
         /// Reset the gate to its initial state. Called when a level
         /// is restarted by the GameManager.

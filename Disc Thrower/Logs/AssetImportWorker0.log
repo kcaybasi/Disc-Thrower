@@ -15,7 +15,7 @@ C:/Users/kfurk/Desktop/Disc Thrower Git/Disc Thrower
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59974
+56727
 Successfully changed project path to: C:/Users/kfurk/Desktop/Disc Thrower Git/Disc Thrower
 C:/Users/kfurk/Desktop/Disc Thrower Git/Disc Thrower
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/kfurk/Desktop/Disc Thrower Git/Disc Thrower
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 177.80 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 143.58 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.13f1 (9e7d58001ecf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Resources/UnitySubsystems
@@ -63,98 +63,98 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012113 seconds.
+Registered in 0.010438 seconds.
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 124.56 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 129.94 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.709 seconds
+- Completed reload, in  0.720 seconds
 Domain Reload Profiling:
-	ReloadAssembly (709ms)
-		BeginReloadAssembly (111ms)
+	ReloadAssembly (721ms)
+		BeginReloadAssembly (106ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (493ms)
-			LoadAssemblies (109ms)
+		EndReloadAssembly (500ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (101ms)
+			SetupTypeCache (105ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (325ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (321ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (61ms)
+				InitializePlatformSupportModulesInManaged (60ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (125ms)
+				RefreshPlugins (130ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (89ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				ProcessInitializeOnLoadAttributes (90ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007251 seconds.
-Android Extension - Scanning For ADB Devices 4373 ms
+Registered in 0.016804 seconds.
+Android Extension - Scanning For ADB Devices 4322 ms
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Disc Thrower Git\Disc Thrower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Disc Thrower Git\Disc Thrower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 119.96 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 145.09 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.402 seconds
+- Completed reload, in  1.822 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1403ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (1823ms)
+		BeginReloadAssembly (129ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1185ms)
-			LoadAssemblies (224ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1579ms)
+			LoadAssemblies (181ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (254ms)
+			SetupTypeCache (319ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (76ms)
-			SetupLoadedEditorAssemblies (595ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (989ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
+				InitializePlatformSupportModulesInManaged (21ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (120ms)
-				BeforeProcessingInitializeOnLoad (96ms)
-				ProcessInitializeOnLoadAttributes (278ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (145ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (601ms)
+				ProcessInitializeOnLoadMethodAttributes (93ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 3.88 ms, found 5 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.36 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6080 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 73 unused Assets / (1.8 MB). Loaded Objects now: 6503.
-Memory consumption went from 265.3 MB to 263.5 MB.
-Total: 5.826300 ms (FindLiveObjects: 0.774400 ms CreateObjectMapping: 0.311800 ms MarkObjects: 3.755400 ms  DeleteObjects: 0.983000 ms)
+Unloading 73 unused Assets / (1.8 MB). Loaded Objects now: 6505.
+Memory consumption went from 265.7 MB to 263.9 MB.
+Total: 4.391600 ms (FindLiveObjects: 0.519800 ms CreateObjectMapping: 0.298300 ms MarkObjects: 2.675500 ms  DeleteObjects: 0.896900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -169,175 +169,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1232864.251926 seconds.
-  path: Assets/Materials
-  artifactKey: Guid(55f1856e7f85d44c1acb5748352936f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials using Guid(55f1856e7f85d44c1acb5748352936f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8453036e7e1151fd86ba7cac44a311') in 0.024771 seconds 
+  Time since last request: 1235308.277931 seconds.
+  path: Assets/URP/Universal Render Pipeline Asset_Renderer.asset
+  artifactKey: Guid(7cfe4f90c49934bf5b780e32c78e9a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/Universal Render Pipeline Asset_Renderer.asset using Guid(7cfe4f90c49934bf5b780e32c78e9a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d8dcc5a934f0c10e92103170be63e3') in 0.060843 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 188.420282 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables
-  artifactKey: Guid(5f9485369d7804eea8a900856cdf5563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables using Guid(5f9485369d7804eea8a900856cdf5563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7a2b265e15ee0a9a7a9c7f556f0532') in 0.008417 seconds 
+  Time since last request: 3.880540 seconds.
+  path: Assets/URP/Universal Render Pipeline Asset.asset
+  artifactKey: Guid(682a949499ed14620a697db66cc009a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/Universal Render Pipeline Asset.asset using Guid(682a949499ed14620a697db66cc009a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b7c8f79241eae0bd568da88901ef93') in 0.008791 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.790301 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Obstacle.prefab
-  artifactKey: Guid(be33d0e842eb84b2786dd46a6869b1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Obstacle.prefab using Guid(be33d0e842eb84b2786dd46a6869b1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e858c0b8480ecc776109bdca2ed10a22') in 0.307739 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.369601 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab
-  artifactKey: Guid(cb9ad7287b7794fe0b9822d3dc1c14da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab using Guid(cb9ad7287b7794fe0b9822d3dc1c14da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3034465ecda7e2ccb4f0b1d13c83faf8') in 0.048400 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 106.957710 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab
-  artifactKey: Guid(cb9ad7287b7794fe0b9822d3dc1c14da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab using Guid(cb9ad7287b7794fe0b9822d3dc1c14da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9d73b655a062b4431d271e3f973f79') in 0.024820 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.527150 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab
-  artifactKey: Guid(5bd318a794a4f4540b17e0167e382731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab using Guid(5bd318a794a4f4540b17e0167e382731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b548a7ce8c041970aa1ea9aa3ca46b9e') in 0.035139 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.299682 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/GateBase.prefab
-  artifactKey: Guid(cb9ad7287b7794fe0b9822d3dc1c14da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/GateBase.prefab using Guid(cb9ad7287b7794fe0b9822d3dc1c14da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '234fe085e2c4a7ee6539ae2ebe9f2339') in 0.028825 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.146293 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab
-  artifactKey: Guid(2f0e4e6720b2bd549b59e798f12c8274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab using Guid(2f0e4e6720b2bd549b59e798f12c8274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd3eaae414b6a29d1faa8e7efda2fb1') in 0.038196 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.584514 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease 1.prefab
-  artifactKey: Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease 1.prefab using Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165f1f0bc272a4983946978bed599d0b') in 0.024246 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.789593 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease 1.prefab
-  artifactKey: Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease 1.prefab using Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886924c7ea9ff0085b9c8d0d8863101c') in 0.029034 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.452633 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease 1.prefab
-  artifactKey: Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease 1.prefab using Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7961bc69b88e7870ca731f2175c41115') in 0.029167 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.689818 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease 1.prefab
-  artifactKey: Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease 1.prefab using Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a092d377344e13d75109420caf826cac') in 0.024620 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.940676 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab
-  artifactKey: Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab using Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d656fa907b43eea89b2f05228dfc3d8') in 0.037348 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.808472 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab
-  artifactKey: Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab using Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998b9ff21fddf619064679f0c4b80f50') in 0.031580 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.226008 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab
-  artifactKey: Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab using Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd2cecf09f2ccef9752ff840a30868e') in 0.022056 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.242566 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab
-  artifactKey: Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab using Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82921e7a9f5310087222bdec80e8b447') in 0.017614 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.010894 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab
-  artifactKey: Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab using Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4cff77e685d0537413b5cef6f398670') in 0.021771 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.225706 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeIncrease.prefab
-  artifactKey: Guid(82517b7b0147cf3458ee3ef4cec319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeIncrease.prefab using Guid(82517b7b0147cf3458ee3ef4cec319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db76cfe1510829ac0923032d3180d1f0') in 0.031420 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.323007 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab
-  artifactKey: Guid(2f0e4e6720b2bd549b59e798f12c8274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab using Guid(2f0e4e6720b2bd549b59e798f12c8274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762e132a70dedda569f0b4b44541f61d') in 0.026498 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.778706 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab
-  artifactKey: Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab using Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e411f67c3c65d37a9e9385780a9ab00b') in 0.021616 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.913672 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab
-  artifactKey: Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab using Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '710c0404fd4b1097116af9b052e78d0e') in 0.029268 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.087781 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeIncrease.prefab
-  artifactKey: Guid(82517b7b0147cf3458ee3ef4cec319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeIncrease.prefab using Guid(82517b7b0147cf3458ee3ef4cec319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7064b2a45e2a778fcead64ab6798e99') in 0.029651 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.958042 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeIncrease.prefab
-  artifactKey: Guid(82517b7b0147cf3458ee3ef4cec319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeIncrease.prefab using Guid(82517b7b0147cf3458ee3ef4cec319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe8d9544178fd638be7b3c946b1158a') in 0.021482 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.243636 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Collectable_Key.prefab
-  artifactKey: Guid(c6bc8ac5158084d61bd0ff5226446964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Collectable_Key.prefab using Guid(c6bc8ac5158084d61bd0ff5226446964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e85a56cb7dbd772ce3aa8ea2a4bef5') in 0.022894 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.583240 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab
-  artifactKey: Guid(2f0e4e6720b2bd549b59e798f12c8274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateIncrease.prefab using Guid(2f0e4e6720b2bd549b59e798f12c8274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dda49a569dfe88af245b750d9428145') in 0.027062 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.139990 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab
-  artifactKey: Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab using Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '326b711db047fb5e27625356612b1d27') in 0.021497 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.727266 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab
-  artifactKey: Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeDecrease.prefab using Guid(6109815e2de26804d966c52347ab01f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5624b42d41c779dee5c294ff79e896b') in 0.019210 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.076933 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab
-  artifactKey: Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RateDecrease.prefab using Guid(f98bed93408f1d34095178af3540f1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0d687ed5bbef26451b7a546c30f57c') in 0.019112 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.324197 seconds.
-  path: Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeIncrease.prefab
-  artifactKey: Guid(82517b7b0147cf3458ee3ef4cec319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runner/Environment/Prefabs/Spawnables/Gate_RangeIncrease.prefab using Guid(82517b7b0147cf3458ee3ef4cec319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0468187eae85f7bf409586b353be2326') in 0.033458 seconds 
+  Time since last request: 262.438139 seconds.
+  path: Assets/Prefabs/AudioManager.prefab
+  artifactKey: Guid(3fa07830033d8744d910171b837dbf29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AudioManager.prefab using Guid(3fa07830033d8744d910171b837dbf29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b5f7cd43ae35ac5223f737cb7962a0') in 0.132855 seconds 

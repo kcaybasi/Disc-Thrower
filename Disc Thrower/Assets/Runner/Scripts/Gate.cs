@@ -1,6 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace HyperCasual.Runner
 {
@@ -10,7 +14,7 @@ namespace HyperCasual.Runner
     /// with this object, it will trigger a fail
     /// state with the GameManager.
     /// </summary>
-    public class Gate : Spawnable
+    public class Gate : MonoBehaviour
     {
         const string k_PlayerTag = "Player";
 
@@ -24,52 +28,25 @@ namespace HyperCasual.Runner
         bool m_Applied;
         Vector3 m_TextInitialScale;
 
+        private void Awake()
+        {
+            string signText = null;
+            switch (Mathf.Sign(m_Value))
+            {
+                case 1: signText = "+"+m_Value;
+                    break;
+                case -1: signText = m_Value.ToString(CultureInfo.CurrentCulture);
+                    break;
+            }
+            m_Text.GetComponent<TextMeshPro>().text = signText;
+        }
+
         enum GateType
         {
             ChangeRate,
             ChangeRange,
         }
-
-        /// <summary>
-        /// Sets the local scale of this spawnable object
-        /// and ensures the Text attached to this gate
-        /// does not scale.
-        /// </summary>
-        /// <param name="scale">
-        /// The scale to apply to this spawnable object.
-        /// </param>
-        public override void SetScale(Vector3 scale)
-        {
-            // Ensure the text does not get scaled
-            if (m_Text != null)
-            {
-                float xFactor = Mathf.Min(scale.y / scale.x, 1.0f);
-                float yFactor = Mathf.Min(scale.x / scale.y, 1.0f);
-                m_Text.localScale = Vector3.Scale(m_TextInitialScale, new Vector3(xFactor, yFactor, 1.0f));
-
-                m_Transform.localScale = scale;
-            }
-        }
         
-        /// <summary>
-        /// Reset the gate to its initial state. Called when a level
-        /// is restarted by the GameManager.
-        /// </summary>
-        public override void ResetSpawnable()
-        {
-            m_Applied = false;
-        }
-
-        protected override void Awake()
-        {
-            base.Awake();
-
-            if (m_Text != null)
-            {
-                m_TextInitialScale = m_Text.localScale;
-            }
-        }
-
         void OnTriggerEnter(Collider col)
         {
             if (col.CompareTag(k_PlayerTag) && !m_Applied)

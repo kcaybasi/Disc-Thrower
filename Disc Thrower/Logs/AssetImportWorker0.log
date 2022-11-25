@@ -728,3 +728,45 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7591.332947 seconds.
+  path: Assets/Prefabs/Gates/GateRateDecrease.prefab
+  artifactKey: Guid(762ff73117d1640838a0c5dd0fc76472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateRateDecrease.prefab using Guid(762ff73117d1640838a0c5dd0fc76472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6cf4ec3e7b5828a4f6631291911ce43') in 0.138257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.361879 seconds.
+  path: Assets/Prefabs/Gates/GateRangeIncrease.prefab
+  artifactKey: Guid(c3a80c47479c84f70a13d3cda6a30460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateRangeIncrease.prefab using Guid(c3a80c47479c84f70a13d3cda6a30460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f4ec9ad75e61129156398f62f760c1') in 0.026004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.580255 seconds.
+  path: Assets/Prefabs/Gates/GateRangeDecrease.prefab
+  artifactKey: Guid(40eae9d0b07f2441da25eea3bec8184b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateRangeDecrease.prefab using Guid(40eae9d0b07f2441da25eea3bec8184b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a1834d1f471d039e04b617deecb012') in 0.026980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.507899 seconds.
+  path: Assets/Prefabs/Gates/GateRateIncrease.prefab
+  artifactKey: Guid(9b36f0ce58ac44536918d245dd18b6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateRateIncrease.prefab using Guid(9b36f0ce58ac44536918d245dd18b6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e597374c512e66876cadaf0c32d3215c') in 0.032067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.041589 seconds.
+  path: Assets/Prefabs/Gates/GateRateDecrease.prefab
+  artifactKey: Guid(762ff73117d1640838a0c5dd0fc76472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateRateDecrease.prefab using Guid(762ff73117d1640838a0c5dd0fc76472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '153ba3bb5ae60960d169b04c05017430') in 0.028315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.593997 seconds.
+  path: Assets/Prefabs/Gates/GateBase.prefab
+  artifactKey: Guid(35b9417a09d6a495d915232cb80cb04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateBase.prefab using Guid(35b9417a09d6a495d915232cb80cb04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53dc042eef39b05678ac33026d283ab1') in 0.025510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.018073 seconds.
+  path: Assets/Prefabs/Gates/GateRangeIncrease.prefab
+  artifactKey: Guid(c3a80c47479c84f70a13d3cda6a30460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateRangeIncrease.prefab using Guid(c3a80c47479c84f70a13d3cda6a30460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d6bc9f9fa258ed8ecb7dc495776a7e2') in 0.018274 seconds 

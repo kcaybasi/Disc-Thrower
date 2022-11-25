@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1520050941896884807, guid: 35b9417a09d6a495d915232cb80cb04c,
         type: 3}
       propertyPath: m_Name
-      value: Gate_2212
+      value: GateRateIncrease
       objectReference: {fileID: 0}
     - target: {fileID: 2263642431319873627, guid: 35b9417a09d6a495d915232cb80cb04c,
         type: 3}
@@ -25,7 +25,7 @@ PrefabInstance:
     - target: {fileID: 2263642431319873627, guid: 35b9417a09d6a495d915232cb80cb04c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 2263642431319873627, guid: 35b9417a09d6a495d915232cb80cb04c,
         type: 3}

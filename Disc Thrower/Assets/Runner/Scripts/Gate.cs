@@ -28,8 +28,12 @@ namespace HyperCasual.Runner
         bool m_Applied;
         Vector3 m_TextInitialScale;
 
+        private MeshRenderer _meshRenderer;
+
         private void Awake()
         {
+            _meshRenderer = GetComponent<MeshRenderer>();
+            
             string signText = null;
             switch (Mathf.Sign(m_Value))
             {
@@ -67,6 +71,9 @@ namespace HyperCasual.Runner
                     DiscThrower.Instance.AdjustThrowRange(m_Value);
                 break;
             }
+
+            _meshRenderer.material.color = Color.grey;
+            
 
             m_Applied = true;
         }

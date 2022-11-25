@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cash.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Disc.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DiscThrower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stone.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,7 +76,7 @@
       <workItem from="1669115892684" duration="790000" />
       <workItem from="1669122016011" duration="3422000" />
       <workItem from="1669288790722" duration="6129000" />
-      <workItem from="1669368091777" duration="4311000" />
+      <workItem from="1669368091777" duration="4978000" />
     </task>
     <servers />
   </component>

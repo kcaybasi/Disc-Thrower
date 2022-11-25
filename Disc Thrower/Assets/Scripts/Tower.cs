@@ -7,6 +7,7 @@ public class Tower : MonoBehaviour
 {
     private List<Stone> _stones;
     private int _hitCountForReward;
+    [SerializeField] private ParticleSystem cashBillParticle;
 
     private void Start()
     {
@@ -22,6 +23,15 @@ public class Tower : MonoBehaviour
                 Stone stone = child.GetComponent<Stone>();
                 _hitCountForReward += stone.HitCount;
             }
+        }
+    }
+
+    public void CheckIfTowerDestroyed()
+    {
+        _hitCountForReward--;
+        if (_hitCountForReward==0)
+        {
+            cashBillParticle.Play();
         }
     }
 

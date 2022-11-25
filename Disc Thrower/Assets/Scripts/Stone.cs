@@ -12,9 +12,11 @@ public class Stone : MonoBehaviour
     [SerializeField] private int hitCount;
     public int HitCount => hitCount;
     [SerializeField] private TextMeshProUGUI hitCountText;
+    private Tower _tower;
 
     private void Awake()
     {
+        _tower = transform.parent.GetComponent<Tower>();
         _gibletParticle = transform.parent.GetChild(0).GetComponent<ParticleSystem>();
         _stoneColor = GetComponent<MeshRenderer>().material.color;
         hitCountText.text = hitCount.ToString();
@@ -31,6 +33,7 @@ public class Stone : MonoBehaviour
             
             other.GetComponent<Collider>().enabled = false;
             UpdateHitCount();
+            _tower.CheckIfTowerDestroyed();
             if (hitCount==0)
             {
                 _gibletParticle.Play();

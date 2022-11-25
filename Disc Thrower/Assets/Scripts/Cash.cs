@@ -11,8 +11,8 @@ public class Cash : MonoBehaviour
     {
         if (other.CompareTag(k_PlayerTag))
         {
-            transform.DOMove(other.transform.position, .2f);
-            transform.DOScale(Vector3.zero, .1f);
+            //transform.DOMove(other.transform.position, .2f);
+            //transform.DOScale(Vector3.zero, .1f);
         }
     }
 }

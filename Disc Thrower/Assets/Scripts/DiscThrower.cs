@@ -26,8 +26,8 @@ public class DiscThrower : MonoBehaviour
         }
         sDiscThrower= this;
         
-        _baseRange = 50f;
-        _baseRate = 1f;
+        _baseRange = 35f;
+        _baseRate = .35f;
     }
 
     private void Update()

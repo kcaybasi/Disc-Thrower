@@ -33,13 +33,19 @@ namespace HyperCasual.Runner
         private void Awake()
         {
             _meshRenderer = GetComponent<MeshRenderer>();
-            
+            UpdateValueText();
+        }
+
+        private void UpdateValueText()
+        {
             string signText = null;
             switch (Mathf.Sign(m_Value))
             {
-                case 1: signText = "+"+m_Value;
+                case 1:
+                    signText = "+" + m_Value;
                     break;
-                case -1: signText = m_Value.ToString(CultureInfo.CurrentCulture);
+                case -1:
+                    signText = m_Value.ToString(CultureInfo.CurrentCulture);
                     break;
             }
             m_Text.GetComponent<TextMeshPro>().text = signText;
@@ -71,10 +77,7 @@ namespace HyperCasual.Runner
                     DiscThrower.Instance.AdjustThrowRange(m_Value);
                 break;
             }
-
             _meshRenderer.material.color = Color.grey;
-            
-
             m_Applied = true;
         }
     }

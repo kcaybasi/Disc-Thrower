@@ -63,7 +63,7 @@ public class DiscThrower : MonoBehaviour
                 DualThrow();
                 break;
             case ThrowType.SpreadShot:
-                ThrowDisc();
+                SpreadShot();
                 break;
         }
     }
@@ -89,6 +89,31 @@ public class DiscThrower : MonoBehaviour
         float currentZ_2 = obj_2.transform.position.z;
         obj.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
         obj_2.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
+    }
+
+    void SpreadShot()
+    {
+        GameObject obj = ObjectPooler.Instance.DiscPool.Get();
+        GameObject obj_2 = ObjectPooler.Instance.DiscPool.Get();
+        GameObject obj_3 = ObjectPooler.Instance.DiscPool.Get();
+        
+        obj.transform.position = transform.position+Vector3.up*.2f;
+        obj_2.transform.position = transform.position+Vector3.up*.2f-Vector3.left*.5f;
+        obj_3.transform.position = transform.position+Vector3.up*.2f-Vector3.right*.5f;
+        
+        float currentZ = obj.transform.position.z;
+        float currentZ_2 = obj_2.transform.position.z;
+        float currentZ_3 = obj_3.transform.position.z;
+
+        float currentX_2 = obj_2.transform.position.x;
+        float currentX_3 = obj_3.transform.position.x;
+        obj.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
+        
+        obj_2.transform.DOMoveZ(currentZ_2 + _baseRange+DiscThrowRange, 5f);
+        obj_2.transform.DOMoveX(.25f*(currentX_2 + _baseRange+DiscThrowRange), 5f);
+        
+        obj_3.transform.DOMoveZ(currentZ_3 + _baseRange+DiscThrowRange, 5f);
+        obj_3.transform.DOMoveX(-.25f*(currentX_3 + _baseRange+DiscThrowRange), 5f);
     }
 
     IEnumerator DiscThrowRoutine()

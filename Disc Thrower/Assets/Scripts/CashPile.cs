@@ -18,5 +18,4 @@ public class CashPile : MonoBehaviour
             cashHolder.transform.DOScale(Vector3.zero, .35f);
         }
     }
-
 }

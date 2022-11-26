@@ -9,7 +9,6 @@ public class Tower : MonoBehaviour
 {
     private List<Stone> _stones;
     private int _hitCountForReward;
-    [SerializeField] private ParticleSystem cashBillParticle;
     [SerializeField] private List<GameObject> cashObjects = new List<GameObject>();
 
     private void Start()
@@ -28,24 +27,5 @@ public class Tower : MonoBehaviour
             }
         }
     }
-
-    public void CheckIfTowerDestroyed()
-    {
-        _hitCountForReward--;
-        if (_hitCountForReward==0)
-        {
-            cashBillParticle.Play();
-            SendCashToPlayer();
-        }
-    }
-
-    void SendCashToPlayer()
-    {
-        foreach (var cashObject in cashObjects)
-        {
-           
-            cashObject.transform.DOScale(Vector3.zero, .85f);
-        }
-    }
-
+    
 }

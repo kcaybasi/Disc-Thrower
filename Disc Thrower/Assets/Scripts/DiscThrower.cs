@@ -16,7 +16,14 @@ public class DiscThrower : MonoBehaviour
     private float _baseRate;
     public float DiscThrowRange { get; set; }
     public float DiscThrowRate { get; set; }
+    private ThrowType _throwType=ThrowType.RegularThrow;
 
+    public enum ThrowType
+    {
+        RegularThrow,
+        DualShot,
+        SpreadShot,
+    }
     private void Awake()
     {
         if (sDiscThrower != null && sDiscThrower!= this)
@@ -28,6 +35,13 @@ public class DiscThrower : MonoBehaviour
         
         _baseRange = 35f;
         _baseRate = .35f;
+        
+        
+    }
+
+    public void ChangeThrowType(ThrowType throwType)
+    {
+        _throwType = throwType;
     }
 
     private void Update()
@@ -38,6 +52,21 @@ public class DiscThrower : MonoBehaviour
         }
     }
 
+    void GetThrowType()
+    {
+        switch (_throwType)
+        {
+            case ThrowType.RegularThrow:
+                ThrowDisc();
+                break;
+            case ThrowType.DualShot:
+                DualThrow();
+                break;
+            case ThrowType.SpreadShot:
+                ThrowDisc();
+                break;
+        }
+    }
     void ThrowDisc()
     {
         GameObject obj = ObjectPooler.Instance.DiscPool.Get();
@@ -48,10 +77,24 @@ public class DiscThrower : MonoBehaviour
         obj.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
     }
 
+    void DualThrow()
+    {
+        GameObject obj = ObjectPooler.Instance.DiscPool.Get();
+        GameObject obj_2 = ObjectPooler.Instance.DiscPool.Get();
+        
+        obj.transform.position = transform.position+Vector3.up*.2f-Vector3.left*.5f;
+        obj_2.transform.position = transform.position+Vector3.up*.2f-Vector3.right*.5f;
+        
+        float currentZ = obj.transform.position.z;
+        float currentZ_2 = obj_2.transform.position.z;
+        obj.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
+        obj_2.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
+    }
+
     IEnumerator DiscThrowRoutine()
     {
         _isThrowAllowed = false;
-        ThrowDisc();
+        GetThrowType();
         yield return new WaitForSeconds(_baseRate-DiscThrowRate);
         _isThrowAllowed = true;
     }

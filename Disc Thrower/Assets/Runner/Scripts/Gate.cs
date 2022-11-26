@@ -72,7 +72,6 @@ namespace HyperCasual.Runner
                 case GateType.ChangeRate:
                     DiscThrower.Instance.AdjustThrowRate(m_Value);
                 break;
-
                 case GateType.ChangeRange:
                     DiscThrower.Instance.AdjustThrowRange(m_Value);
                 break;

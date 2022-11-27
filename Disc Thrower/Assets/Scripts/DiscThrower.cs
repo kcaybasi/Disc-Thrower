@@ -7,8 +7,8 @@ using NUnit.Framework.Constraints;
 
 public class DiscThrower : MonoBehaviour
 {
-    public static DiscThrower Instance => sDiscThrower;
-    static DiscThrower sDiscThrower;
+    public static DiscThrower Instance => _sDiscThrower;
+    static DiscThrower _sDiscThrower;
     
     private bool _isThrowAllowed=true;
     private GameObject _discObj;
@@ -26,12 +26,12 @@ public class DiscThrower : MonoBehaviour
     }
     private void Awake()
     {
-        if (sDiscThrower != null && sDiscThrower!= this)
+        if (_sDiscThrower != null && _sDiscThrower!= this)
         {
             Destroy(gameObject);
             return;
         }
-        sDiscThrower= this;
+        _sDiscThrower= this;
         
         _baseRange = 35f;
         _baseRate = .35f;
@@ -82,8 +82,8 @@ public class DiscThrower : MonoBehaviour
         GameObject obj = ObjectPooler.Instance.DiscPool.Get();
         GameObject obj_2 = ObjectPooler.Instance.DiscPool.Get();
         
-        obj.transform.position = transform.position+Vector3.up*.2f-Vector3.left*.5f;
-        obj_2.transform.position = transform.position+Vector3.up*.2f-Vector3.right*.5f;
+        obj.transform.position = transform.position+Vector3.up*.2f-Vector3.left*.35f;
+        obj_2.transform.position = transform.position+Vector3.up*.2f-Vector3.right*.35f;
         
         float currentZ = obj.transform.position.z;
         float currentZ_2 = obj_2.transform.position.z;
@@ -98,8 +98,8 @@ public class DiscThrower : MonoBehaviour
         GameObject obj_3 = ObjectPooler.Instance.DiscPool.Get();
         
         obj.transform.position = transform.position+Vector3.up*.2f;
-        obj_2.transform.position = transform.position+Vector3.up*.2f-Vector3.left*.5f;
-        obj_3.transform.position = transform.position+Vector3.up*.2f-Vector3.right*.5f;
+        obj_2.transform.position = transform.position+Vector3.up*.2f-Vector3.left*.35f;
+        obj_3.transform.position = transform.position+Vector3.up*.2f-Vector3.right*.35f;
         
         float currentZ = obj.transform.position.z;
         float currentZ_2 = obj_2.transform.position.z;
@@ -110,10 +110,10 @@ public class DiscThrower : MonoBehaviour
         obj.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
         
         obj_2.transform.DOMoveZ(currentZ_2 + _baseRange+DiscThrowRange, 5f);
-        obj_2.transform.DOMoveX(.25f*(currentX_2 + _baseRange+DiscThrowRange), 5f);
+        obj_2.transform.DOMoveX(.15f*(currentX_2 + _baseRange+DiscThrowRange), 5f);
         
         obj_3.transform.DOMoveZ(currentZ_3 + _baseRange+DiscThrowRange, 5f);
-        obj_3.transform.DOMoveX(-.25f*(currentX_3 + _baseRange+DiscThrowRange), 5f);
+        obj_3.transform.DOMoveX(-.15f*(currentX_3 + _baseRange+DiscThrowRange), 5f);
     }
 
     IEnumerator DiscThrowRoutine()
@@ -126,7 +126,7 @@ public class DiscThrower : MonoBehaviour
 
     public void AdjustThrowRate(float value)
     {
-        DiscThrowRate += value*.1f;
+        DiscThrowRate += value*.05f;
     }
 
     public void AdjustThrowRange(float value)

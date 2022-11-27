@@ -110,6 +110,9 @@ namespace HyperCasual.Runner
                 return;
             }
 
+            Application.targetFrameRate = 60;
+            QualitySettings.vSyncCount = 0;
+
             s_Instance = this;
 
             Initialize();

@@ -9,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CashPile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Confeti.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Disc.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DiscThrower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerGate.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,7 +80,7 @@
       <workItem from="1669288790722" duration="6129000" />
       <workItem from="1669368091777" duration="6604000" />
       <workItem from="1669481314846" duration="4313000" />
-      <workItem from="1669555097453" duration="314000" />
+      <workItem from="1669555097453" duration="2100000" />
     </task>
     <servers />
   </component>

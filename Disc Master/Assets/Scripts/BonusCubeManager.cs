@@ -10,29 +10,41 @@ public class BonusCubeManager : MonoBehaviour
     GameObject _bonusCube;
     MeshRenderer _bonusCubeMeshRenderer;
     private float _deltaZ;
-    private int _hitCount;
+    private int _hitCount=2;
     private float _colorConstant;
     private void Awake()
     {
-        _hitCount = 2;
-        //Spawn 25 cubes
         for (int i = 0; i < 25; i++)
         {
-            //Spawn a cube
-            GameObject cube = Instantiate(bonusCubePrefab, transform);
-            //Set the position of the cube
-            cube.transform.position = new Vector3(0, 2.9f, 151.232f+_deltaZ);
-            _deltaZ += (157.5498f - 151.232f);
-            //Set every color in random hue pattern
-            _bonusCube = cube.transform.GetChild(1).gameObject;
-            _bonusCubeMeshRenderer = _bonusCube.GetComponent<MeshRenderer>();
-            _bonusCubeMeshRenderer.material.color = Color.HSVToRGB(_colorConstant, 1f, 1f);
-            _colorConstant += 0.05f;
-            //Set hit counts 
-            _bonusCube.GetComponent<BonusCube>().HitCount = _hitCount;
-            _bonusCube.GetComponent<BonusCube>().hitCountText.text = _hitCount.ToString();
-            _hitCount++;
+            var cube = SpawnCube();
+            SetCubeColor(cube);
+            SetCubeHitCount();
         }
     }
 
+    private GameObject SpawnCube()
+    {
+        GameObject cube = Instantiate(bonusCubePrefab, transform);
+        cube.transform.position = new Vector3(0, 2.9f, 151.232f + _deltaZ);
+        _deltaZ += (157.5498f - 151.232f);
+        return cube;
+    }
+
+    private void SetCubeHitCount()
+    {
+        _bonusCube.GetComponent<BonusCube>().HitCount = _hitCount;
+        _bonusCube.GetComponent<BonusCube>().hitCountText.text = _hitCount.ToString();
+        _hitCount++;
+    }
+
+    private void SetCubeColor(GameObject cube)
+    {
+        _bonusCube = cube.transform.GetChild(1).gameObject;
+        _bonusCubeMeshRenderer = _bonusCube.GetComponent<MeshRenderer>();
+        _bonusCubeMeshRenderer.material.color = Color.HSVToRGB(_colorConstant, 1f, 1f);
+        if (_colorConstant > 1)
+            _colorConstant = 0;
+        else
+            _colorConstant += 0.06f;
+    }
 }

@@ -10,12 +10,14 @@ public class CashPile : MonoBehaviour
     [SerializeField] private ParticleSystem cashParticle;
     [SerializeField] private GameObject cashHolder;
     private bool _isCollected;
+    public static Action OnCollected;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(k_PlayerTag))
         {
             cashParticle.Play();
             cashHolder.transform.DOScale(Vector3.zero, .35f);
+            OnCollected?.Invoke();
         }
     }
 }

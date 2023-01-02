@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -14,6 +15,8 @@ public class CGameManager : MonoBehaviour
     private bool _isGameStarted;
     [SerializeField] private GameObject startText;
     [SerializeField] private GameObject gameOverMenu;
+    [SerializeField] private TextMeshProUGUI cashText;
+    private int _cash;
 
     private void Awake()
     {
@@ -27,6 +30,17 @@ public class CGameManager : MonoBehaviour
         }
         Application.targetFrameRate = 60;
         QualitySettings.vSyncCount = 0;
+    }
+
+    private void Start()
+    {
+        CashPile.OnCollected += OnCashCollected;
+    }
+
+    private void OnCashCollected()
+    {
+        _cash += 5;
+        cashText.text = "$  " + _cash;
     }
 
     // If player touches the screen, the game starts
@@ -57,4 +71,8 @@ public class CGameManager : MonoBehaviour
         startText.SetActive(true);
     }
 
+    private void OnDestroy()
+    {
+        CashPile.OnCollected -= OnCashCollected;
+    }
 }

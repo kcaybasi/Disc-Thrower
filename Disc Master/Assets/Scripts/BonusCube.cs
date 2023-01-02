@@ -12,10 +12,9 @@ public class BonusCube : MonoBehaviour
     [SerializeField] private ParticleSystem gibletParticle;
     public TextMeshProUGUI hitCountText;
     private Color _bonusCubeColor;
-    private void Awake()
+    private void Start()
     {
         _bonusCubeColor = GetComponent<MeshRenderer>().material.color;
-       
     }
 
     private void OnTriggerEnter(Collider other)

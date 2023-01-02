@@ -39,7 +39,7 @@ public class Stone : MonoBehaviour
         }
         else if (other.CompareTag("Player"))
         {
-            CGameManager.OnGameEnded?.Invoke();
+            CGameManager.Instance.GameOver();
         }
     }
 

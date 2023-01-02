@@ -30,7 +30,7 @@ public class DiscThrower : MonoBehaviour
         }
         _sDiscThrower= this;
         
-        _baseRange = 35f;
+        _baseRange = 50f;
         _baseRate = .35f;
         
         
@@ -85,7 +85,7 @@ public class DiscThrower : MonoBehaviour
         float currentZ = obj.transform.position.z;
         float currentZ_2 = obj_2.transform.position.z;
         obj.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
-        obj_2.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
+        obj_2.transform.DOMoveZ(currentZ_2 + _baseRange+DiscThrowRange, 5f);
     }
 
     void SpreadShot()

@@ -11,6 +11,7 @@ public class BonusCubeManager : MonoBehaviour
     MeshRenderer _bonusCubeMeshRenderer;
     private float _deltaZ;
     private int _hitCount;
+    private float _colorConstant;
     private void Awake()
     {
         _hitCount = 2;
@@ -25,11 +26,13 @@ public class BonusCubeManager : MonoBehaviour
             //Set every color in random hue pattern
             _bonusCube = cube.transform.GetChild(1).gameObject;
             _bonusCubeMeshRenderer = _bonusCube.GetComponent<MeshRenderer>();
-            _bonusCubeMeshRenderer.material.color = Color.HSVToRGB(Random.Range(0f, 1f), 1f, 1f);
+            _bonusCubeMeshRenderer.material.color = Color.HSVToRGB(_colorConstant, 1f, 1f);
+            _colorConstant += 0.05f;
             //Set hit counts 
             _bonusCube.GetComponent<BonusCube>().HitCount = _hitCount;
             _bonusCube.GetComponent<BonusCube>().hitCountText.text = _hitCount.ToString();
             _hitCount++;
         }
     }
+
 }

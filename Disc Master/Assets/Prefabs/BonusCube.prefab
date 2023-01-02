@@ -128,7 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 723e8bc8d74764a23b96af66cde5ac6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitCount: 4
   gibletParticle: {fileID: 0}
   hitCountText: {fileID: 9155632488358281674}
 --- !u!1 &9155632487295360443
@@ -301,8 +300,7 @@ MonoBehaviour:
   m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 68a8618941fb84bdc9f80ddbca2e163b, type: 2}
-  m_sharedMaterial: {fileID: -5145662407812522215, guid: 68a8618941fb84bdc9f80ddbca2e163b,
-    type: 2}
+  m_sharedMaterial: {fileID: -5145662407812522215, guid: 68a8618941fb84bdc9f80ddbca2e163b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

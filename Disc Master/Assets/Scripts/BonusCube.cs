@@ -8,14 +8,14 @@ using TMPro;
 
 public class BonusCube : MonoBehaviour
 {
-    [SerializeField] private int hitCount;
+    public int HitCount { get; set; }
     [SerializeField] private ParticleSystem gibletParticle;
-    [SerializeField] private TextMeshProUGUI hitCountText;
+    public TextMeshProUGUI hitCountText;
     private Color _bonusCubeColor;
     private void Awake()
     {
         _bonusCubeColor = GetComponent<MeshRenderer>().material.color;
-        hitCountText.text = hitCount.ToString();
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -29,7 +29,7 @@ public class BonusCube : MonoBehaviour
             
             other.GetComponent<Collider>().enabled = false;
             UpdateHitCount();
-            if (hitCount==0)
+            if (HitCount==0)
             {
                 gibletParticle.Play();
                 transform.DOScale(Vector3.zero, .35f);
@@ -39,7 +39,7 @@ public class BonusCube : MonoBehaviour
     
     private void UpdateHitCount()
     {
-        hitCount--;
-        hitCountText.text = hitCount.ToString();
+        HitCount--;
+        hitCountText.text = HitCount.ToString();
     }
 }

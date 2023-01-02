@@ -73,7 +73,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168254820557207646}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f6a4636148d6499da6c13da217d891e, type: 3}
   m_Name: 
@@ -90,10 +90,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef8780b71a4d4a7c9a84f64b2582fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Animator: {fileID: 0}
+  m_Animator: {fileID: 2588949752370115134}
   m_SkinnedMeshRenderer: {fileID: 0}
-  m_PlayerSpeed: 1
-  m_CustomPlayerSpeed: 10
+  m_PlayerSpeed: 3
+  m_CustomPlayerSpeed: 7
   m_AccelerationSpeed: 10
   m_DecelerationSpeed: 20
   m_HorizontalSpeedFactor: 0.5

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -16,6 +17,7 @@ namespace HyperCasual.Runner
         public static PlayerController Instance => s_Instance;
         static PlayerController s_Instance;
 
+        private bool _isGameStarted;
         [SerializeField]
         Animator m_Animator;
 
@@ -109,13 +111,21 @@ namespace HyperCasual.Runner
                 Destroy(gameObject);
                 return;
             }
-
-            Application.targetFrameRate = 60;
-            QualitySettings.vSyncCount = 0;
-
             s_Instance = this;
 
             Initialize();
+        }
+
+        private void Start()
+        {
+            CGameManager.OnGameStarted += OnGameStarted;
+        }
+
+        private void OnGameStarted()
+        {
+            _isGameStarted = true;
+            GetComponent<DiscThrower>().enabled = true;
+            m_Animator.SetBool("IsGameStarted", true);
         }
 
         /// <summary>
@@ -231,6 +241,10 @@ namespace HyperCasual.Runner
 
         void Update()
         {
+            if (_isGameStarted==false)
+            {
+                return;
+            }
             float deltaTime = Time.deltaTime;
 
             // Update Scale

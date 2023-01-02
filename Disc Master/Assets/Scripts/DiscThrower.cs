@@ -31,7 +31,7 @@ public class DiscThrower : MonoBehaviour
         _sDiscThrower= this;
         
         _baseRange = 50f;
-        _baseRate = .35f;
+        _baseRate = .65f;
         
         
     }

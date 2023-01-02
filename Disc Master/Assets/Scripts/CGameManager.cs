@@ -6,6 +6,7 @@ using UnityEngine;
 public class CGameManager : MonoBehaviour
 {
     public static Action OnGameStarted;
+    public static Action OnGameEnded;
     private bool _isGameStarted;
     [SerializeField] private GameObject startText;
 

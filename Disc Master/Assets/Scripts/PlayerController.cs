@@ -16,8 +16,7 @@ namespace HyperCasual.Runner
         /// <summary> Returns the PlayerController. </summary>
         public static PlayerController Instance => s_Instance;
         static PlayerController s_Instance;
-
-        private bool _isGameStarted;
+        
         [SerializeField]
         Animator m_Animator;
 
@@ -114,18 +113,6 @@ namespace HyperCasual.Runner
             s_Instance = this;
 
             Initialize();
-        }
-
-        private void Start()
-        {
-            CGameManager.OnGameStarted += OnGameStarted;
-        }
-
-        private void OnGameStarted()
-        {
-            _isGameStarted = true;
-            GetComponent<DiscThrower>().enabled = true;
-            m_Animator.SetBool("IsGameStarted", true);
         }
 
         /// <summary>
@@ -241,10 +228,6 @@ namespace HyperCasual.Runner
 
         void Update()
         {
-            if (_isGameStarted==false)
-            {
-                return;
-            }
             float deltaTime = Time.deltaTime;
 
             // Update Scale
@@ -322,5 +305,6 @@ namespace HyperCasual.Runner
         {
             return Mathf.Approximately(a.x, b.x) && Mathf.Approximately(a.y, b.y) && Mathf.Approximately(a.z, b.z);
         }
+
     }
 }

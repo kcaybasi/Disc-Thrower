@@ -37,6 +37,10 @@ public class Stone : MonoBehaviour
                 transform.DOScale(Vector3.zero, .35f);
             }
         }
+        else if (other.CompareTag("Player"))
+        {
+            CGameManager.OnGameEnded?.Invoke();
+        }
     }
 
     private void UpdateHitCount()

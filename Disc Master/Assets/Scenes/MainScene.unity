@@ -2683,7 +2683,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2152659826137968433, guid: 9e2e4f508532a4040a3b430f6ee5cf82, type: 3}
       propertyPath: hitCount
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6397060807274191498, guid: 9e2e4f508532a4040a3b430f6ee5cf82, type: 3}
       propertyPath: m_RootOrder
@@ -2800,32 +2800,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7012923303718171066, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7012923303718171066, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7012923303718171066, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1338124141}
-    - target: {fileID: 7012923303718171066, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7012923303718171066, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 7012923303718171066, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CGameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7012923303718171066, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 7012923304112907148, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7012923304886374537, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
       propertyPath: m_Pivot.x

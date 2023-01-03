@@ -17,7 +17,6 @@ public class CGameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverMenu;
     [SerializeField] private TextMeshProUGUI cashText;
     private int _cash;
-
     private void Awake()
     {
         if (Instance == null)
@@ -30,6 +29,9 @@ public class CGameManager : MonoBehaviour
         }
         Application.targetFrameRate = 60;
         QualitySettings.vSyncCount = 0;
+        
+        CreatePrefKeys("Cash",_cash);
+        UpdateCashText();
     }
 
     private void Start()
@@ -37,10 +39,28 @@ public class CGameManager : MonoBehaviour
         CashPile.OnCollected += OnCashCollected;
     }
 
+    void CreatePrefKeys(string key,int value)
+    {
+        if (PlayerPrefs.HasKey("Cash"))
+        {
+            _cash=PlayerPrefs.GetInt("Cash");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Cash", value);
+        }
+    }
+    
+    void UpdateCashText()
+    {
+        cashText.text = "$  " + _cash;
+    }
+    
     private void OnCashCollected()
     {
         _cash += 5;
-        cashText.text = "$  " + _cash;
+        PlayerPrefs.SetInt("Cash", _cash);
+        UpdateCashText();
     }
 
     // If player touches the screen, the game starts

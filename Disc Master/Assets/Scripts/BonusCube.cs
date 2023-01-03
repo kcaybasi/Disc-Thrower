@@ -34,6 +34,10 @@ public class BonusCube : MonoBehaviour
                 transform.DOScale(Vector3.zero, .35f);
             }
         }
+        else if (other.CompareTag("Player"))
+        {
+            CGameManager.Instance.LevelCompleted();
+        }
     }
     
     private void UpdateHitCount()

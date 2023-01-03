@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class CGameManager : MonoBehaviour
 {
@@ -12,9 +13,12 @@ public class CGameManager : MonoBehaviour
     public static CGameManager Instance;
     public static Action OnGameStarted;
     public static Action OnGameOver;
+    public static Action OnLevelCompleted;
     private bool _isGameStarted;
+    [SerializeField] private ParticleSystem levelCompleteParticles;
     [SerializeField] private GameObject startText;
     [SerializeField] private GameObject gameOverMenu;
+    [SerializeField] private GameObject levelCompletedMenu;
     [SerializeField] private TextMeshProUGUI cashText;
     private int _cash;
     private void Awake()
@@ -82,11 +86,27 @@ public class CGameManager : MonoBehaviour
         gameOverMenu.SetActive(true);
     }
     
+    // If player finishes the game, the game ends
+    public void LevelCompleted()
+    {
+        OnLevelCompleted?.Invoke();
+        levelCompletedMenu.SetActive(true);
+        levelCompleteParticles.Play();
+    }
+    
     // If player restarts the game, the game starts again
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameOverMenu.SetActive(false);
+        _isGameStarted = false;
+        startText.SetActive(true);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        levelCompletedMenu.SetActive(false);
         _isGameStarted = false;
         startText.SetActive(true);
     }

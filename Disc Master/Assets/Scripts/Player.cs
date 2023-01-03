@@ -10,6 +10,9 @@ public class Player : MonoBehaviour
     DiscThrower _discThrower;
     Animator _animator;
     ParticleSystem _crashParticles;
+    private static readonly int IsGameStarted = Animator.StringToHash("IsGameStarted");
+    private static readonly int IsGameFinished = Animator.StringToHash("IsGameFinished");
+    private static readonly int Dead = Animator.StringToHash("Dead");
 
     private void Awake()
     {
@@ -23,6 +26,15 @@ public class Player : MonoBehaviour
     {
         CGameManager.OnGameStarted += OnGameStarted;
         CGameManager.OnGameOver += OnGameOver;
+        CGameManager.OnLevelCompleted += OnGameFinished;
+    }
+
+    private void OnGameFinished()
+    {
+        _playerController.enabled = false;
+        _discThrower.enabled = false;
+        _animator.SetBool(IsGameFinished, true);
+        _animator.SetBool(IsGameStarted,false);
     }
 
     private void OnGameOver()
@@ -30,19 +42,20 @@ public class Player : MonoBehaviour
         _playerController.enabled = false;
         _discThrower.enabled = false;
         _crashParticles.Play();
-        _animator.SetBool("Dead", true);
+        _animator.SetBool(Dead, true);
     }
 
     private void OnGameStarted()
     {
         _playerController.enabled = true;
         _discThrower.enabled = true;
-        _animator.SetBool("IsGameStarted",true);
+        _animator.SetBool(IsGameStarted,true);
     }
 
     private void OnDestroy()
     {
         CGameManager.OnGameStarted -= OnGameStarted;
         CGameManager.OnGameOver -= OnGameOver;
+        CGameManager.OnLevelCompleted -= OnGameFinished;
     }
 }

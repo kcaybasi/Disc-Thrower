@@ -1844,6 +1844,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e2e4f508532a4040a3b430f6ee5cf82, type: 3}
+--- !u!1 &1372147636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1372147636, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
+  m_PrefabInstance: {fileID: 7012923304711515976}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1408076215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2289,6 +2294,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1804224793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7012923304623958965, guid: 8758a148901214c959c3634b9bc05d4b, type: 3}
+  m_PrefabInstance: {fileID: 7012923304711515976}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1862645077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2503,6 +2519,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2068289190}
     - target: {fileID: 4520626021613024432, guid: 5e9591f9a24fc412780d5c5d7fc77c56, type: 3}
+      propertyPath: levelText
+      value: 
+      objectReference: {fileID: 1804224793}
+    - target: {fileID: 4520626021613024432, guid: 5e9591f9a24fc412780d5c5d7fc77c56, type: 3}
       propertyPath: startText
       value: 
       objectReference: {fileID: 2008617203}
@@ -2510,6 +2530,10 @@ PrefabInstance:
       propertyPath: gameOverMenu
       value: 
       objectReference: {fileID: 618007748}
+    - target: {fileID: 4520626021613024432, guid: 5e9591f9a24fc412780d5c5d7fc77c56, type: 3}
+      propertyPath: levelCompletedMenu
+      value: 
+      objectReference: {fileID: 1372147636}
     - target: {fileID: 4520626021613024433, guid: 5e9591f9a24fc412780d5c5d7fc77c56, type: 3}
       propertyPath: m_Name
       value: GameManager

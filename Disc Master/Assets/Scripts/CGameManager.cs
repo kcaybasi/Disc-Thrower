@@ -20,6 +20,7 @@ public class CGameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverMenu;
     [SerializeField] private GameObject levelCompletedMenu;
     [SerializeField] private TextMeshProUGUI cashText;
+    [SerializeField] private TextMeshProUGUI levelText;
     private int _cash;
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class CGameManager : MonoBehaviour
         
         CreatePrefKeys("Cash",_cash);
         UpdateCashText();
+        UpdateLevelText();
     }
 
     private void Start()
@@ -58,6 +60,11 @@ public class CGameManager : MonoBehaviour
     void UpdateCashText()
     {
         cashText.text = "$  " + _cash;
+    }
+
+    void UpdateLevelText()
+    {
+        levelText.text = "LEVEL " + (SceneManager.GetActiveScene().buildIndex+1);
     }
     
     private void OnCashCollected()

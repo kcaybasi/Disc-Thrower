@@ -2545,3 +2545,318 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 245.139649 seconds.
+  path: Assets/Prefabs/Stones/Stone_1.prefab
+  artifactKey: Guid(673160258b2074964b4639387c421554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/Stone_1.prefab using Guid(673160258b2074964b4639387c421554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d0d4d382867eb2580998ecf928863d') in 0.154033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.861520 seconds.
+  path: Assets/Prefabs/Stones/Stone_2.prefab
+  artifactKey: Guid(bebca705c0b7249aaa56ea268ef9c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/Stone_2.prefab using Guid(bebca705c0b7249aaa56ea268ef9c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc58b52eb19c1225066b5c77f0981a5') in 0.011829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.905935 seconds.
+  path: Assets/Prefabs/Stones/StoneBase.prefab
+  artifactKey: Guid(52df442a2bdd2466f824c1555ed3ba1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneBase.prefab using Guid(52df442a2bdd2466f824c1555ed3ba1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bbe2ffbb39fc5dce3dbb1c762a5cbb2') in 0.011588 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002594 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x28a6cb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/kadirfurkancaybasi/Desktop/Disc Thrower Git/Disc Master/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/kadirfurkancaybasi/Desktop/Disc Thrower Git/Disc Master/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.139 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1140ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (928ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (327ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (416ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (261ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5654 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (2.0 MB). Loaded Objects now: 7017.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 5.092583 ms (FindLiveObjects: 0.299667 ms CreateObjectMapping: 0.129750 ms MarkObjects: 3.294583 ms  DeleteObjects: 1.367834 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003203 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x28a187000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/kadirfurkancaybasi/Desktop/Disc Thrower Git/Disc Master/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/kadirfurkancaybasi/Desktop/Disc Thrower Git/Disc Master/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.081 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1081ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (901ms)
+			LoadAssemblies (40ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (304ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (429ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (265ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5655 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (2.0 MB). Loaded Objects now: 7032.
+Memory consumption went from 0.75 GB to 0.75 GB.
+Total: 4.067000 ms (FindLiveObjects: 0.263625 ms CreateObjectMapping: 0.094791 ms MarkObjects: 2.876458 ms  DeleteObjects: 0.831500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 136.275166 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_1.prefab
+  artifactKey: Guid(d08859101fd0d4b78930e876b40b8c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_1.prefab using Guid(d08859101fd0d4b78930e876b40b8c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c5d0b11735885b701b8bf25d86ffd4') in 0.153091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.159934 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_1 1.prefab
+  artifactKey: Guid(ac639ce7f87df456a95c8d3379749252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_1 1.prefab using Guid(ac639ce7f87df456a95c8d3379749252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbc2ac4a52d261837cc61f375100972') in 0.014871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.638881 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_1 2.prefab
+  artifactKey: Guid(ab399f1ee00da4249995df3afcc4105f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_1 2.prefab using Guid(ab399f1ee00da4249995df3afcc4105f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2875bf10dc64799f6c98f2eee4fef8f1') in 0.014740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.469978 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_2.prefab
+  artifactKey: Guid(ab399f1ee00da4249995df3afcc4105f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_2.prefab using Guid(ab399f1ee00da4249995df3afcc4105f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03aa8d88b392715bcf7513a305020b6') in 0.015311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.723013 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_3.prefab
+  artifactKey: Guid(ac639ce7f87df456a95c8d3379749252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_3.prefab using Guid(ac639ce7f87df456a95c8d3379749252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7c172e9cb872de76e33801bed43f4a') in 0.014767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.694673 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder.prefab
+  artifactKey: Guid(9e2e4f508532a4040a3b430f6ee5cf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder.prefab using Guid(9e2e4f508532a4040a3b430f6ee5cf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f65dc903045c3a58beb5871b07f0b4b1') in 0.015037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.073056 seconds.
+  path: Assets/Prefabs/Stones/StoneHolderBase.prefab
+  artifactKey: Guid(9e2e4f508532a4040a3b430f6ee5cf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolderBase.prefab using Guid(9e2e4f508532a4040a3b430f6ee5cf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ae18128ba94d7896d040149fe81853') in 0.013956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.560466 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_3.prefab
+  artifactKey: Guid(ac639ce7f87df456a95c8d3379749252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_3.prefab using Guid(ac639ce7f87df456a95c8d3379749252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00226e3dcb58180ffd9f5e7408d80af5') in 0.015479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.307327 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_2.prefab
+  artifactKey: Guid(ab399f1ee00da4249995df3afcc4105f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_2.prefab using Guid(ab399f1ee00da4249995df3afcc4105f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6f66e9e9172a9a8ac38d3ce945772c') in 0.015753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.883704 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_2.prefab
+  artifactKey: Guid(ab399f1ee00da4249995df3afcc4105f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_2.prefab using Guid(ab399f1ee00da4249995df3afcc4105f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b07be3483d059ec90e65cbf4c59ccb') in 0.016705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.262916 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_1.prefab
+  artifactKey: Guid(d08859101fd0d4b78930e876b40b8c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_1.prefab using Guid(d08859101fd0d4b78930e876b40b8c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7852b6464e58509fb713d4f0215ae551') in 0.015305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.054188 seconds.
+  path: Assets/Prefabs/Stones/StoneBase.prefab
+  artifactKey: Guid(52df442a2bdd2466f824c1555ed3ba1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneBase.prefab using Guid(52df442a2bdd2466f824c1555ed3ba1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7aa6c559af4a145191fe370bc1012d') in 0.010588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.807107 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_1.prefab
+  artifactKey: Guid(9e2e4f508532a4040a3b430f6ee5cf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_1.prefab using Guid(9e2e4f508532a4040a3b430f6ee5cf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467ed311759639cadd32faab6abedf0a') in 0.013635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.946217 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_1 1.prefab
+  artifactKey: Guid(35fca1f6f51f54e74b6eb15a61881081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_1 1.prefab using Guid(35fca1f6f51f54e74b6eb15a61881081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b56fcf1ddd5fd92ddaa6334771e230b1') in 0.013306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.379713 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_1 2.prefab
+  artifactKey: Guid(04d19b0a9099248c5b53ccfbee78d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_1 2.prefab using Guid(04d19b0a9099248c5b53ccfbee78d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c21c09dc69d2ce552309e7c58de44864') in 0.013797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.114058 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_2.prefab
+  artifactKey: Guid(35fca1f6f51f54e74b6eb15a61881081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_2.prefab using Guid(35fca1f6f51f54e74b6eb15a61881081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe6d289677be541d22027fe9e6e2e07') in 0.013933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.345999 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_3.prefab
+  artifactKey: Guid(04d19b0a9099248c5b53ccfbee78d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_3.prefab using Guid(04d19b0a9099248c5b53ccfbee78d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '282b4b3a12065984080e27cd5618df8f') in 0.013565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.609007 seconds.
+  path: Assets/Prefabs/Stones/StoneHolder_2.prefab
+  artifactKey: Guid(35fca1f6f51f54e74b6eb15a61881081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/StoneHolder_2.prefab using Guid(35fca1f6f51f54e74b6eb15a61881081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f45de5cefb945efe3cfb114c592a28') in 0.014969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.062667 seconds.
+  path: Assets/Prefabs/Stones/Stone_2.prefab
+  artifactKey: Guid(bebca705c0b7249aaa56ea268ef9c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/Stone_2.prefab using Guid(bebca705c0b7249aaa56ea268ef9c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24734e9ac7e7ca9c94715a9b72730bdf') in 0.010574 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003080 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x28a187000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/kadirfurkancaybasi/Desktop/Disc Thrower Git/Disc Master/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/kadirfurkancaybasi/Desktop/Disc Thrower Git/Disc Master/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.999 seconds
+Domain Reload Profiling:
+	ReloadAssembly (999ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (827ms)
+			LoadAssemblies (38ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (382ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5654 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (2.0 MB). Loaded Objects now: 7087.
+Memory consumption went from 0.76 GB to 0.75 GB.
+Total: 4.169334 ms (FindLiveObjects: 0.277583 ms CreateObjectMapping: 0.092083 ms MarkObjects: 2.971417 ms  DeleteObjects: 0.827500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 48.420654 seconds.
+  path: Assets/Prefabs/Stones/Stone_2.prefab
+  artifactKey: Guid(bebca705c0b7249aaa56ea268ef9c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stones/Stone_2.prefab using Guid(bebca705c0b7249aaa56ea268ef9c0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632e782881a05e4b47e01ca93deab889') in 0.133237 seconds 

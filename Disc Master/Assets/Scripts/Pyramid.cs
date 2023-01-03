@@ -8,7 +8,7 @@ using UnityEngine.Serialization;
 
 public class Pyramid : MonoBehaviour
 {
-    private ParticleSystem _gibletParticle;
+    private ParticleSystem _smokeParticle;
     private Color _stoneColor;
     [SerializeField] private int hitCount;
     public int HitCount => hitCount;
@@ -22,7 +22,7 @@ public class Pyramid : MonoBehaviour
 
     private void Awake()
     {
-        _gibletParticle = transform.parent.GetChild(0).GetComponent<ParticleSystem>();
+        _smokeParticle = transform.parent.GetChild(0).GetComponent<ParticleSystem>();
         _stoneColor = GetComponent<MeshRenderer>().material.color;
         hitCountText.text = hitCount.ToString();
         _feedbackTextMeshProUGUI=feedbackTextGameObject.GetComponent<TextMeshProUGUI>();
@@ -37,7 +37,7 @@ public class Pyramid : MonoBehaviour
         {
             other.GetComponent<Disc>().SendDiscBack();
             
-            var gibletParticleMain = _gibletParticle.main;
+            var gibletParticleMain = _smokeParticle.main;
             gibletParticleMain.startColor = _stoneColor;
             
             other.GetComponent<Collider>().enabled = false;
@@ -47,7 +47,7 @@ public class Pyramid : MonoBehaviour
                 DetermineUpgradeType();
                 feedbackTextGameObject.SetActive(true);
                 _feedbackTextMeshProUGUI.text = _feedbackText;
-                _gibletParticle.Play();
+                _smokeParticle.Play();
                 mysteryBox.SetActive(false);
                 transform.DOScale(Vector3.zero, .35f);
             }

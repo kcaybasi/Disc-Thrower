@@ -1,0 +1,53 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using DG.Tweening;
+
+
+public class Pyramid : MonoBehaviour
+{
+    private ParticleSystem _gibletParticle;
+    private Color _stoneColor;
+    [SerializeField] private int hitCount;
+    public int HitCount => hitCount;
+    [SerializeField] private TextMeshProUGUI hitCountText;
+    [SerializeField] private GameObject mysteryBox;
+
+    private void Awake()
+    {
+        _gibletParticle = transform.parent.GetChild(0).GetComponent<ParticleSystem>();
+        _stoneColor = GetComponent<MeshRenderer>().material.color;
+        hitCountText.text = hitCount.ToString();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Disc"))
+        {
+            other.GetComponent<Disc>().SendDiscBack();
+            
+            var gibletParticleMain = _gibletParticle.main;
+            gibletParticleMain.startColor = _stoneColor;
+            
+            other.GetComponent<Collider>().enabled = false;
+            UpdateHitCount();
+            if (hitCount==0)
+            {
+                _gibletParticle.Play();
+                mysteryBox.SetActive(false);
+                transform.DOScale(Vector3.zero, .35f);
+            }
+        }
+        else if (other.CompareTag("Player"))
+        {
+            CGameManager.Instance.GameOver();
+        }
+    }
+
+    private void UpdateHitCount()
+    {
+        hitCount--;
+        hitCountText.text = hitCount.ToString();
+    }
+}

@@ -7,8 +7,10 @@ using Random = UnityEngine.Random;
 public class BonusCubeManager : MonoBehaviour
 {
     [SerializeField] private GameObject bonusCubePrefab;
-    GameObject _bonusCube;
+    private GameObject _bonusCube;
+    private GameObject _base;
     MeshRenderer _bonusCubeMeshRenderer;
+    MeshRenderer _baseMeshRenderer;
     private float _deltaZ;
     private int _hitCount=2;
     private float _colorConstant;
@@ -39,9 +41,12 @@ public class BonusCubeManager : MonoBehaviour
 
     private void SetCubeColor(GameObject cube)
     {
+        _base= cube.transform.GetChild(2).gameObject;
         _bonusCube = cube.transform.GetChild(1).gameObject;
         _bonusCubeMeshRenderer = _bonusCube.GetComponent<MeshRenderer>();
+        _baseMeshRenderer= _base.GetComponent<MeshRenderer>();
         _bonusCubeMeshRenderer.material.color = Color.HSVToRGB(_colorConstant, 1f, 1f);
+        _baseMeshRenderer.material.color = Color.HSVToRGB(_colorConstant, 1f, 1f);
         if (_colorConstant > 1)
             _colorConstant = 0;
         else

@@ -12,7 +12,7 @@ public class BonusCubeManager : MonoBehaviour
     MeshRenderer _bonusCubeMeshRenderer;
     MeshRenderer _baseMeshRenderer;
     private float _deltaZ;
-    private int _hitCount=2;
+    private int _hitCount=8;
     private float _colorConstant;
     private void Awake()
     {
@@ -36,7 +36,7 @@ public class BonusCubeManager : MonoBehaviour
     {
         _bonusCube.GetComponent<BonusCube>().HitCount = _hitCount;
         _bonusCube.GetComponent<BonusCube>().hitCountText.text = _hitCount.ToString();
-        _hitCount++;
+        _hitCount+=2;
     }
 
     private void SetCubeColor(GameObject cube)

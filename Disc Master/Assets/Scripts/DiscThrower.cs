@@ -123,7 +123,7 @@ public class DiscThrower : MonoBehaviour
 
     public void AdjustThrowRate(float value)
     {
-        DiscThrowRate += value*.05f;
+        DiscThrowRate += value*.075f;
     }
 
     public void AdjustThrowRange(float value)

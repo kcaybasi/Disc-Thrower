@@ -134,7 +134,7 @@ namespace HyperCasual.Runner
             {
                 m_StartHeight = 1.0f;
             }
-            SetMaxXPosition(10);
+            SetMaxXPosition(8);
             ResetSpeed();
         }
 

@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 
 public class Pyramid : MonoBehaviour
@@ -23,21 +25,21 @@ public class Pyramid : MonoBehaviour
     private void Awake()
     {
         _smokeParticle = transform.parent.GetChild(0).GetComponent<ParticleSystem>();
-        GetComponent<MeshRenderer>().material.DOColor(Color.HSVToRGB(Random.Range(0f, 1f), 1f, 1f), 0.5f);
-        _stoneColor = GetComponent<MeshRenderer>().material.color;
+         GetComponent<MeshRenderer>().material.DOColor(Color.HSVToRGB(Random.Range(0f, 1f), 1f, 1f), 0.5f);
+ 
         hitCountText.text = hitCount.ToString();
         _feedbackTextMeshProUGUI=feedbackTextGameObject.GetComponent<TextMeshProUGUI>();
         
         _feedbackTexts.Add("Rate");
         _feedbackTexts.Add("Range");
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Disc"))
         {
             other.GetComponent<Disc>().SendDiscBack();
-            
+            Color color = GetComponent<MeshRenderer>().material.color;
+            _stoneColor = color;
             var gibletParticleMain = _smokeParticle.main;
             gibletParticleMain.startColor = _stoneColor;
             

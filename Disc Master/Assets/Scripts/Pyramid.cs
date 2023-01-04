@@ -23,6 +23,7 @@ public class Pyramid : MonoBehaviour
     private void Awake()
     {
         _smokeParticle = transform.parent.GetChild(0).GetComponent<ParticleSystem>();
+        GetComponent<MeshRenderer>().material.DOColor(Color.HSVToRGB(Random.Range(0f, 1f), 1f, 1f), 0.5f);
         _stoneColor = GetComponent<MeshRenderer>().material.color;
         hitCountText.text = hitCount.ToString();
         _feedbackTextMeshProUGUI=feedbackTextGameObject.GetComponent<TextMeshProUGUI>();

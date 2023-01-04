@@ -95,8 +95,8 @@ public class DiscThrower : MonoBehaviour
         GameObject obj_3 = ObjectPooler.Instance.DiscPool.Get();
         
         obj.transform.position = transform.position+Vector3.up*.2f;
-        obj_2.transform.position = transform.position+Vector3.up*.2f-Vector3.left*.35f;
-        obj_3.transform.position = transform.position+Vector3.up*.2f-Vector3.right*.35f;
+        obj_2.transform.position = transform.position+Vector3.up*.2f-Vector3.left*.25f;
+        obj_3.transform.position = transform.position+Vector3.up*.2f-Vector3.right*.25f;
         
         float currentZ = obj.transform.position.z;
         float currentZ_2 = obj_2.transform.position.z;
@@ -107,10 +107,10 @@ public class DiscThrower : MonoBehaviour
         obj.transform.DOMoveZ(currentZ + _baseRange+DiscThrowRange, 5f);
         
         obj_2.transform.DOMoveZ(currentZ_2 + _baseRange+DiscThrowRange, 5f);
-        obj_2.transform.DOMoveX(.15f*(currentX_2 + _baseRange+DiscThrowRange), 5f);
+        obj_2.transform.DOMoveX(.1f*(currentX_2 + _baseRange+DiscThrowRange), 5f);
         
         obj_3.transform.DOMoveZ(currentZ_3 + _baseRange+DiscThrowRange, 5f);
-        obj_3.transform.DOMoveX(-.15f*(currentX_3 + _baseRange+DiscThrowRange), 5f);
+        obj_3.transform.DOMoveX(-.1f*(currentX_3 + _baseRange+DiscThrowRange), 5f);
     }
 
     IEnumerator DiscThrowRoutine()

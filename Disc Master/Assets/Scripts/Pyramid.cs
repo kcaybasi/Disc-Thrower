@@ -61,7 +61,7 @@ public class Pyramid : MonoBehaviour
     void DetermineUpgradeType()
     {
         int randomTextNo = Random.Range(0, 2);
-        int randomUpgradeNo=Random.Range(0, 3);
+        int randomUpgradeNo=Random.Range(1, 3);
         switch (randomTextNo)
         {
             case 0:

@@ -667,3 +667,101 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (2.0 MB). Loaded Objects now: 6420.
+Memory consumption went from 222.0 MB to 220.0 MB.
+Total: 3.618125 ms (FindLiveObjects: 0.209750 ms CreateObjectMapping: 0.075875 ms MarkObjects: 2.542375 ms  DeleteObjects: 0.789792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 549.749767 seconds.
+  path: Assets/Prefabs/Gates/GateBase.prefab
+  artifactKey: Guid(35b9417a09d6a495d915232cb80cb04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateBase.prefab using Guid(35b9417a09d6a495d915232cb80cb04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6725b570ca3b671b8d194d75e998fc') in 0.626952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.592874 seconds.
+  path: Assets/Prefabs/Gates/GateRangeDecrease.prefab
+  artifactKey: Guid(40eae9d0b07f2441da25eea3bec8184b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateRangeDecrease.prefab using Guid(40eae9d0b07f2441da25eea3bec8184b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad0a41408f10d51794979bb7fd485a1') in 0.026643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.548355 seconds.
+  path: Assets/Prefabs/Gates/GateRateDecrease.prefab
+  artifactKey: Guid(762ff73117d1640838a0c5dd0fc76472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/GateRateDecrease.prefab using Guid(762ff73117d1640838a0c5dd0fc76472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec18810d5734084b6bbf39981346d3d4') in 0.023614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.461941 seconds.
+  path: Assets/Prefabs/Gates/SpreadShotGate.prefab
+  artifactKey: Guid(6268623838a89274b8dadde7ca5201fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gates/SpreadShotGate.prefab using Guid(6268623838a89274b8dadde7ca5201fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485c8c1bc90aad3dae14cfd9bb9b6bf6') in 0.031513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1135.917319 seconds.
+  path: Assets/Sprites/GreenGate.png
+  artifactKey: Guid(7a68845344a2548f3876da436e565d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GreenGate.png using Guid(7a68845344a2548f3876da436e565d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ae9b7dd25fbc57a11bf0c3983453484') in 0.091517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.882028 seconds.
+  path: Assets/Sprites/GreenGate.png
+  artifactKey: Guid(7a68845344a2548f3876da436e565d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GreenGate.png using Guid(7a68845344a2548f3876da436e565d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5092f2b12078012e5b4cb47dabc04404') in 0.005239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.112490 seconds.
+  path: Assets/Sprites/GreenGate.png
+  artifactKey: Guid(7a68845344a2548f3876da436e565d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/GreenGate.png using Guid(7a68845344a2548f3876da436e565d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08bb80b484b4ae14be29bb325351567e') in 0.004553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.116874 seconds.
+  path: Assets/AssetPacks/Epic Toon FX/Textures/gradient_bw.png
+  artifactKey: Guid(d64d3defc2da5374083c85049eab408f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Epic Toon FX/Textures/gradient_bw.png using Guid(d64d3defc2da5374083c85049eab408f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ee0cc9a06147e420715039577fa1cc') in 0.006158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/green.png
+  artifactKey: Guid(ffeba93637e654de6a5906b48520dc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/green.png using Guid(ffeba93637e654de6a5906b48520dc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60d3d069bdaa1fa2a316514c303ab4b5') in 0.013615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Header.jpg
+  artifactKey: Guid(78a59ca99f8987941adb61f9e14a06a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Header.jpg using Guid(78a59ca99f8987941adb61f9e14a06a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a03c95220afd7066f2601adc808b10') in 0.576141 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 42 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (2.0 MB). Loaded Objects now: 6515.
+Memory consumption went from 463.9 MB to 461.9 MB.
+Total: 8.306791 ms (FindLiveObjects: 0.240125 ms CreateObjectMapping: 0.077875 ms MarkObjects: 7.225417 ms  DeleteObjects: 0.762958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

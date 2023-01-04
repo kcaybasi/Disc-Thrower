@@ -67,7 +67,7 @@ public class CGameManager : MonoBehaviour
         levelText.text = "LEVEL " + (SceneManager.GetActiveScene().buildIndex+1);
     }
     
-    private void OnCashCollected()
+    public void OnCashCollected()
     {
         _cash += 5;
         PlayerPrefs.SetInt("Cash", _cash);

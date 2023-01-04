@@ -17,6 +17,7 @@ public class Pyramid : MonoBehaviour
     [SerializeField] private TextMeshProUGUI hitCountText;
     [SerializeField] private GameObject mysteryBox;
     [SerializeField] private GameObject feedbackTextGameObject;
+    [SerializeField] private ParticleSystem dolarBillParticle;
     private TextMeshProUGUI _feedbackTextMeshProUGUI;
     string _feedbackText;
     List<string> _feedbackTexts = new List<string>();
@@ -25,13 +26,12 @@ public class Pyramid : MonoBehaviour
     private void Awake()
     {
         _smokeParticle = transform.parent.GetChild(0).GetComponent<ParticleSystem>();
-        // GetComponent<MeshRenderer>().material.DOColor(Color.HSVToRGB(Random.Range(0f, 1f), 1f, 1f), 0.5f);
- 
         hitCountText.text = hitCount.ToString();
         _feedbackTextMeshProUGUI=feedbackTextGameObject.GetComponent<TextMeshProUGUI>();
         
         _feedbackTexts.Add("Rate");
         _feedbackTexts.Add("Range");
+        _feedbackTexts.Add("Cash!");
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -63,7 +63,7 @@ public class Pyramid : MonoBehaviour
 
     void DetermineUpgradeType()
     {
-        int randomTextNo = Random.Range(0, 2);
+        int randomTextNo = Random.Range(0, 3);
         int randomUpgradeNo=Random.Range(1, 3);
         switch (randomTextNo)
         {
@@ -74,6 +74,11 @@ public class Pyramid : MonoBehaviour
             case 1:
                 _feedbackText="+"+randomUpgradeNo+" "+_feedbackTexts[1];
                 DiscThrower.Instance.AdjustThrowRange(randomUpgradeNo);
+                break;
+            case 2:
+                _feedbackText = _feedbackTexts[2];
+                dolarBillParticle.Play();
+                CGameManager.Instance.OnCashCollected();
                 break;
         }
     }

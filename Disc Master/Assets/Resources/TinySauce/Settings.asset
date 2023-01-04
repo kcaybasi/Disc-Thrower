@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa11ec82e9746928e211e7f096812ca, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  gameAnalyticsIosGameKey: 
+  gameAnalyticsIosSecretKey: 
+  gameAnalyticsAndroidGameKey: 36cecd6635e11d5336a74fec16679948
+  gameAnalyticsAndroidSecretKey: 80bf97c340df5468da023ec790875f43957a63c4
+  facebookAppId: 875083817111388
+  facebookClientToken: 768325df3954331ff9a2029a1ccbec59
+  adjustIOSToken: 
+  adjustAndroidToken: gr6905b7m77k
+  EditorIdfa: 7019454c-e532-4842-8609-d9d3f1b67655
+  UseRemoteConfig: 0
+  UseVoodooAnalytics: 1
+  companyName: ChipmunkGames
+  privacyPolicyURL: https://chipmunk.games/privacy-policy/
+  developerContactEmail: k.furkancaybasi@gmail.com

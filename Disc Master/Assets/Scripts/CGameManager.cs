@@ -21,6 +21,7 @@ public class CGameManager : MonoBehaviour
     [SerializeField] private GameObject levelCompletedMenu;
     [SerializeField] private TextMeshProUGUI cashText;
     [SerializeField] private TextMeshProUGUI levelText;
+    private int _levelNumber;
     private int _cash;
     private void Awake()
     {
@@ -38,6 +39,8 @@ public class CGameManager : MonoBehaviour
         CreatePrefKeys("Cash",_cash);
         UpdateCashText();
         UpdateLevelText();
+
+        _levelNumber = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     private void Start()
@@ -81,6 +84,7 @@ public class CGameManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             _isGameStarted = true;
+            TinySauce.OnGameStarted(_levelNumber.ToString());
             OnGameStarted?.Invoke();
             startText.SetActive(false);
         }
@@ -97,6 +101,7 @@ public class CGameManager : MonoBehaviour
     public void LevelCompleted()
     {
         OnLevelCompleted?.Invoke();
+        TinySauce.OnGameFinished(true, _cash,_levelNumber.ToString());
         levelCompletedMenu.SetActive(true);
         levelCompleteParticles.Play();
     }

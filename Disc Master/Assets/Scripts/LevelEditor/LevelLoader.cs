@@ -11,8 +11,7 @@ namespace LevelEditor
         
         [Header("Level Data")]
         [SerializeField] List<LevelData> levelDataList;
-
-        private LevelData _levelData;
+        private LevelData _currentLevelData;
         public GameObject[] levelObjects;
         private void Awake()
         {
@@ -23,24 +22,15 @@ namespace LevelEditor
                 Destroy(gameObject);
         }
 
-        private void Start()
+        public void SpawnLevelObjects(int levelNumber )
         {
-            SpawnLevelObjects();
-        }
-
-        private void SpawnLevelObjects()
-        {
-            levelObjects = new GameObject[_levelData.LevelObjects.Count];
-            for (int i = 0; i < _levelData.LevelObjects.Count; i++)
+            _currentLevelData= levelDataList[levelNumber-1];
+            levelObjects = new GameObject[_currentLevelData.LevelObjects.Count];
+            for (int i = 0; i < _currentLevelData.LevelObjects.Count; i++)
             {
-                levelObjects[i] = Instantiate(_levelData.LevelObjects[i].Prefab, _levelData.LevelObjects[i].Position,
-                    _levelData.LevelObjects[i].Rotation);
+                levelObjects[i] = Instantiate(_currentLevelData.LevelObjects[i].Prefab, _currentLevelData.LevelObjects[i].Position,
+                    _currentLevelData.LevelObjects[i].Rotation);
             }
-        }
-
-        public void LoadNextLevel()
-        {
-            
         }
     }
 }

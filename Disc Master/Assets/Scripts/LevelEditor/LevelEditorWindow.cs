@@ -130,7 +130,7 @@ public class LevelEditorWindow : EditorWindow
     private void SaveLevelData()
     {
         LevelData levelDataScriptableObj=CreateInstance<LevelData>(); //Create a new instance of LevelData Scriptable Object
-        var spawnableObjects = SpawnableObjects(); //Get all spawnable objects in the scene
+        var spawnableObjects = SpawnableObjectList(); //Get all spawnable objects in the scene
         List<ObjectData> objectDataList = new List<ObjectData>(); //Create a new list of ObjectData
         CreateObjectDataList(spawnableObjects, objectDataList);
         levelDataScriptableObj.LevelObjects = objectDataList; //Assign the objectDataList to the LevelObjects list in the LevelData Scriptable Object
@@ -163,7 +163,7 @@ public class LevelEditorWindow : EditorWindow
         path = FileUtil.GetProjectRelativePath(path); //Get the relative path of the file
         return path;
     }
-    private static List<GameObject> SpawnableObjects()
+    private static List<GameObject> SpawnableObjectList()
     {
         List<GameObject> spawnableObjects = new List<GameObject>(); //Create a new list of spawnable objects
         spawnableObjects.AddRange(GameObject.FindGameObjectsWithTag("Spawnable")); //Add all spawnable objects to the list

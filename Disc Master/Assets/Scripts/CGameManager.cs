@@ -136,7 +136,7 @@ public class CGameManager : MonoBehaviour
 
     public void NextLevel()
     {
-       // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         LevelLoader.Instance.SpawnLevelObjects(_levelNumber);
         levelCompletedMenu.SetActive(false);
         _isGameStarted = false;

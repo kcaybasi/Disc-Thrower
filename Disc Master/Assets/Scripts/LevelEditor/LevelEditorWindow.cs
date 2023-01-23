@@ -187,7 +187,7 @@ public class LevelEditorWindow : EditorWindow
     {
         if (EditorLevelData.spawnablePrefab != null)
         {
-            var gameObject = Instantiate(EditorLevelData.spawnablePrefab, Vector3.zero, Quaternion.identity);
+            var gameObject = Instantiate(EditorLevelData.spawnablePrefab, EditorLevelData.spawnablePrefab.transform.position, EditorLevelData.spawnablePrefab.transform.rotation);
             gameObject.AddComponent<Spawnable>();
             var spawnable = gameObject.GetComponent<Spawnable>();
             gameObject.tag = "Spawnable";
@@ -195,9 +195,6 @@ public class LevelEditorWindow : EditorWindow
             spawnable.Prefab = EditorLevelData.spawnablePrefab;
         }
     }
-
-   
-
 }
 
 

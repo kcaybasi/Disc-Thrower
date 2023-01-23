@@ -1,20 +1,46 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace LevelEditor
 {
     public class LevelLoader : MonoBehaviour
     {
-        [SerializeField] LevelData levelData;
+        //Singleton
+        public static LevelLoader Instance;
+        
+        [Header("Level Data")]
+        [SerializeField] List<LevelData> levelDataList;
+
+        private LevelData _levelData;
         public GameObject[] levelObjects;
+        private void Awake()
+        {
+            //Singleton
+            if (Instance == null)
+                Instance = this;
+            else
+                Destroy(gameObject);
+        }
 
         private void Start()
         {
-            levelObjects = new GameObject[levelData.LevelObjects.Count];
-            for (int i = 0; i < levelData.LevelObjects.Count; i++)
+            SpawnLevelObjects();
+        }
+
+        private void SpawnLevelObjects()
+        {
+            levelObjects = new GameObject[_levelData.LevelObjects.Count];
+            for (int i = 0; i < _levelData.LevelObjects.Count; i++)
             {
-                levelObjects[i] = Instantiate(levelData.LevelObjects[i].Prefab, levelData.LevelObjects[i].Position, levelData.LevelObjects[i].Rotation);
+                levelObjects[i] = Instantiate(_levelData.LevelObjects[i].Prefab, _levelData.LevelObjects[i].Position,
+                    _levelData.LevelObjects[i].Rotation);
             }
+        }
+
+        public void LoadNextLevel()
+        {
+            
         }
     }
 }

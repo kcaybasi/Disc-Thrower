@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using LevelEditor;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,10 +12,15 @@ public class CGameManager : MonoBehaviour
 {
     //Create a singleton
     public static CGameManager Instance;
+    
+    // Game events
     public static Action OnGameStarted;
     public static Action OnGameOver;
     public static Action OnLevelCompleted;
     private bool _isGameStarted;
+    
+    // UI elements
+    [Header("UI Elements")]
     [SerializeField] private ParticleSystem levelCompleteParticles;
     [SerializeField] private GameObject startText;
     [SerializeField] private GameObject gameOverMenu;
@@ -26,13 +32,9 @@ public class CGameManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null)
-        {
             Instance = this;
-        }
         else
-        {
             Destroy(gameObject);
-        }
         Application.targetFrameRate = 60;
         QualitySettings.vSyncCount = 0;
         
@@ -51,13 +53,9 @@ public class CGameManager : MonoBehaviour
     void CreatePrefKeys(string key,int value)
     {
         if (PlayerPrefs.HasKey("Cash"))
-        {
-            _cash=PlayerPrefs.GetInt("Cash");
-        }
+            _cash = PlayerPrefs.GetInt("Cash");
         else
-        {
             PlayerPrefs.SetInt("Cash", value);
-        }
     }
     
     void UpdateCashText()
@@ -117,7 +115,8 @@ public class CGameManager : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
         levelCompletedMenu.SetActive(false);
         _isGameStarted = false;
         startText.SetActive(true);

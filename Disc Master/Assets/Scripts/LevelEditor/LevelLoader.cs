@@ -25,11 +25,11 @@ namespace LevelEditor
         public void SpawnLevelObjects(int levelNumber )
         {
             _currentLevelData= levelDataList[levelNumber-1];
-            levelObjects = new GameObject[_currentLevelData.LevelObjects.Count];
-            for (int i = 0; i < _currentLevelData.LevelObjects.Count; i++)
+            levelObjects = new GameObject[_currentLevelData.levelObjects.Count];
+            for (int i = 0; i < _currentLevelData.levelObjects.Count; i++)
             {
-                levelObjects[i] = Instantiate(_currentLevelData.LevelObjects[i].Prefab, _currentLevelData.LevelObjects[i].Position,
-                    _currentLevelData.LevelObjects[i].Rotation);
+                levelObjects[i] = Instantiate(_currentLevelData.levelObjects[i].Prefab, _currentLevelData.levelObjects[i].Position,
+                    _currentLevelData.levelObjects[i].Rotation);
             }
         }
     }

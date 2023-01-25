@@ -1,8 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-public class Spawnable : MonoBehaviour
+namespace LevelEditor
 {
-    public GameObject Prefab { get; set; }
+    [Serializable]
+    public class Spawnable : MonoBehaviour
+    {
+        public GameObject Prefab { get; set; }
+    }
 }

@@ -9,6 +9,7 @@ namespace LevelEditor
     public class LevelData : ScriptableObject
     {
         public GameObject  spawnablePrefab;
-        public List<ObjectData> LevelObjects = new List<ObjectData>();
+        public List<ObjectData> levelObjects ;
+        public Vector3 spawnPosition;
     }
 }

@@ -1,12 +1,14 @@
 using UnityEngine;
+using System;
 namespace LevelEditor
 {
-    [System.Serializable]
+    
+    [Serializable]
     public class ObjectData
     {
-        public Vector3 Position { get; set; }
-        public Quaternion Rotation { get; set; }
-        public Vector3 Scale { get; set; }
-        public GameObject Prefab { get; set; }
+        public Vector3 Position;
+        public Quaternion Rotation;
+        public Vector3 Scale;
+        public GameObject Prefab;
     }
 }

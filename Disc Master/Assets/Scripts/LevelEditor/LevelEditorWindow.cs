@@ -133,7 +133,7 @@ public class LevelEditorWindow : EditorWindow
         var spawnableObjects = SpawnableObjectList(); //Get all spawnable objects in the scene
         List<ObjectData> objectDataList = new List<ObjectData>(); //Create a new list of ObjectData
         CreateObjectDataList(spawnableObjects, objectDataList);
-        levelDataScriptableObj.LevelObjects = objectDataList; //Assign the objectDataList to the LevelObjects list in the LevelData Scriptable Object
+        levelDataScriptableObj.levelObjects = objectDataList; //Assign the objectDataList to the LevelObjects list in the LevelData Scriptable Object
         var path = GetSavePath(); //Get the path to save the file
         SaveScriptableObj(levelDataScriptableObj, path); //Save the level data to the path
         ClearScene(spawnableObjects); //Clear the scene
@@ -150,6 +150,7 @@ public class LevelEditorWindow : EditorWindow
     private static void SaveScriptableObj(LevelData levelDataScriptableObj, string path)
     {
         AssetDatabase.CreateAsset(levelDataScriptableObj, path); //Create the asset
+        EditorUtility.SetDirty(levelDataScriptableObj);
         AssetDatabase.SaveAssets(); //Save the asset
         AssetDatabase.Refresh(); //Refresh the asset database
     }
@@ -175,11 +176,13 @@ public class LevelEditorWindow : EditorWindow
         //Loop through all spawnable objects and add their object data to the objectDataList
         foreach (GameObject spawnableObject in spawnableObjects)
         {
-            ObjectData objectData = new ObjectData();
-            objectData.Position = spawnableObject.transform.position;
-            objectData.Rotation = spawnableObject.transform.rotation;
-            objectData.Scale = spawnableObject.transform.localScale;
-            objectData.Prefab = spawnableObject.GetComponent<Spawnable>().Prefab;
+            ObjectData objectData = new ObjectData
+            {
+                Position = spawnableObject.transform.position,
+                Rotation = spawnableObject.transform.rotation,
+                Scale = spawnableObject.transform.localScale,
+                Prefab = spawnableObject.GetComponent<Spawnable>().Prefab
+            };
             objectDataList.Add(objectData);
         }
     }

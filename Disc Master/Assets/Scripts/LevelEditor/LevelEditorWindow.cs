@@ -106,17 +106,16 @@ public class LevelEditorWindow : EditorWindow
     {
         GUILayout.BeginArea(_levelSection);
         GUILayout.Space(IconSize+8);
-        GUILayout.Label("SpawnableSettings", _skin.GetStyle("Header2"));
-        
+
         //Assigning prefab to Editor Level Data
         EditorLevelData.spawnablePrefab= (GameObject)EditorGUILayout.ObjectField("Spawnable Prefab", EditorLevelData.spawnablePrefab, typeof(GameObject), false);
-        
+ 
         //Spawnable create button
         if (GUILayout.Button("Create!", GUILayout.Height(40)))
         {
             SpawnPrefab();
         }
-        GUILayout.Space(100);
+        GUILayout.Space(50);
         
         //Save button
         if (GUILayout.Button("Save!", GUILayout.Height(40)))

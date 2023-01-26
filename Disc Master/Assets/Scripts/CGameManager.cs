@@ -83,7 +83,7 @@ public class CGameManager : MonoBehaviour
 
     void UpdateLevelText()
     {
-        levelText.text = "LEVEL " + (SceneManager.GetActiveScene().buildIndex+1);
+        levelText.text = "LEVEL " + (_levelNumber);
     }
     
     public void OnCashCollected()
@@ -137,10 +137,18 @@ public class CGameManager : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        LevelLoader.Instance.SpawnLevelObjects(_levelNumber);
+        LevelLoadingLoop();
         levelCompletedMenu.SetActive(false);
         _isGameStarted = false;
         startText.SetActive(true);
+    }
+
+    private void LevelLoadingLoop()
+    {
+        if (_levelNumber == 3)
+            LevelLoader.Instance.SpawnLevelObjects(1);
+        else
+            LevelLoader.Instance.SpawnLevelObjects(_levelNumber);
     }
 
     private void OnDestroy()

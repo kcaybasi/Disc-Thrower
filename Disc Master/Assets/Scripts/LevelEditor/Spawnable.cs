@@ -7,5 +7,7 @@ namespace LevelEditor
     public class Spawnable : MonoBehaviour
     {
         public GameObject Prefab { get; set; }
+
+        
     }
 }

@@ -28,6 +28,7 @@ namespace LevelEditor
             levelObjects = new GameObject[_currentLevelData.levelObjects.Count];
             for (int i = 0; i < _currentLevelData.levelObjects.Count; i++)
             {
+                
                 levelObjects[i] = Instantiate(_currentLevelData.levelObjects[i].Prefab, _currentLevelData.levelObjects[i].Position,
                     _currentLevelData.levelObjects[i].Rotation);
             }
